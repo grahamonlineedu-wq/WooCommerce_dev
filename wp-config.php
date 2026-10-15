@@ -7,7 +7,7 @@
 
 // 1. Database Configuration
 define( 'DB_HOST',     getenv('WORDPRESS_DB_HOST') ?: '127.0.0.1' );
-define( 'DB_NAME',     getenv('WORDPRESS_DB_NAME') ?: 'woocommerce_dev' );
+define( 'DB_NAME',     getenv('WORDPRESS_DB_NAME') ?: 'wooCommerce_dev' );
 define( 'DB_USER',     getenv('WORDPRESS_DB_USER') ?: 'root' );
 define( 'DB_PASSWORD', getenv('WORDPRESS_DB_PASSWORD') ?: '' );
 define( 'DB_CHARSET',  'utf8mb4' );
@@ -15,14 +15,14 @@ define( 'DB_COLLATE',  '' );
 
 // 2. Authentication Unique Keys and Salts
 // These are read from environment variables or fallback to secure defaults
-define( 'AUTH_KEY',        getenv('AUTH_KEY')        ?: 'put-your-unique-phrase-here-1' );
-define( 'SECURE_AUTH_KEY', getenv('SECURE_AUTH_KEY') ?: 'put-your-unique-phrase-here-2' );
-define( 'LOGGED_IN_KEY',   getenv('LOGGED_IN_KEY')   ?: 'put-your-unique-phrase-here-3' );
-define( 'NONCE_KEY',       getenv('NONCE_KEY')       ?: 'put-your-unique-phrase-here-4' );
-define( 'AUTH_SALT',       getenv('AUTH_SALT')       ?: 'put-your-unique-phrase-here-5' );
-define( 'SECURE_AUTH_SALT',getenv('SECURE_AUTH_SALT')?: 'put-your-unique-phrase-here-6' );
-define( 'LOGGED_IN_SALT',  getenv('LOGGED_IN_SALT')  ?: 'put-your-unique-phrase-here-7' );
-define( 'NONCE_SALT',      getenv('NONCE_SALT')      ?: 'put-your-unique-phrase-here-8' );
+define( 'AUTH_KEY',        getenv('AUTH_KEY')        ?: '279ca416dd8eb8c42c48c8800e5eb8b01f81c353e5a8b1d9d685d7a5bc23083c' );
+define( 'SECURE_AUTH_KEY', getenv('SECURE_AUTH_KEY') ?: 'bb63e3901d15c662f2f87c67dfac1eed7e65e4d9a1a89050b3790ac8f58bfff1' );
+define( 'LOGGED_IN_KEY',   getenv('LOGGED_IN_KEY')   ?: '5d4b57bd5ee55dc503d394a9ab19528f1da08b06e63fb26ccd0ff1c0339b36f5' );
+define( 'NONCE_KEY',       getenv('NONCE_KEY')       ?: '415446c21b21266d977a88d1651ece23513fe4e4f606d1cb439ae1845ffac981' );
+define( 'AUTH_SALT',       getenv('AUTH_SALT')       ?: 'b6868d464e56fc7a3f43fa27fb396756d031f85c82285d64cdb9fb384af3869a' );
+define( 'SECURE_AUTH_SALT',getenv('SECURE_AUTH_SALT')?: '2fede22e065731dd5978d20f524d0a42cf2728ea12a79037a2ebc367d69977e3' );
+define( 'LOGGED_IN_SALT',  getenv('LOGGED_IN_SALT')  ?: '296fd3904e11dbb7aa0773a649c9271862d66eefcd6442b5fec60ebdc3ef37ce' );
+define( 'NONCE_SALT',      getenv('NONCE_SALT')      ?: 'fdc346ed127a880985eb9c089bafd47ab1ae049b8dbca6050c0aa1b2541ac44d' );
 
 // 3. Database Table Prefix
 $table_prefix = 'wp_';
